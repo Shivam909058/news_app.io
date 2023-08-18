@@ -1,0 +1,222 @@
+/* Global Resets and Basic Styles */
+* {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease-out;
+}
+
+body {
+    background-color: #6a6aab;
+    color: #171616;
+    font-size: 16px;
+    line-height: 1.6;
+    background-image: linear-gradient(rgba(105, 146, 222, 0.5), rgba(36, 22, 75, 0.978));
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-out;
+
+}
+
+button {
+    cursor: pointer;
+    box-shadow: #171616;
+}
+
+/* Enhanced Header Styles */
+.news__head {
+    background-color: #4363ad00;
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(50px);
+}
+
+.news__head__nav ul {
+    display: flex;
+    gap: 10px;
+
+}
+
+.news__head__nav li {
+    list-style: none;
+    list-style-image: linear-gradient(rgba(105, 146, 222, 0.5), rgba(36, 22, 75, 0.978));
+}
+
+.news__head__nav a {
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.news__head__nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.news__head__logo img {
+    max-width: 100px;
+    border-radius: 50px;
+    margin-right: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+    display: flex;
+    align-items: center;
+
+   
+}
+
+.news__head__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.news__head__search {
+    background-color: #e7d7d7;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    flex-grow: 1;
+    margin-left: 60px;
+    
+}
+
+.news__head__search input {
+    border: none;
+    background: transparent;
+    padding: 1px;
+    outline: none;
+    flex-grow: 1;
+}
+
+.toggle__mode {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+    margin-left: 120px;
+    
+
+    
+}
+
+.toggle__mode button {
+    background-color: #486194;
+    color: #f4f4f8;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+}
+
+.toggle__mode button:hover {
+    background-color: #666;
+    transform: translateY(-2px);
+}
+
+/* News Articles Styling */
+.news__article {
+    margin: 20px 0;
+    background-color: #722929;
+    border-radius: 150px;
+    padding: 200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news__article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.news__article h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.news__article img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.news__article p {
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Footer Styling */
+.news__footer {
+    background-color: #4363ad00;
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(50px);
+}
+
+.news__footer__nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+.news__head__search event__search {
+    background-color: #d39d9d;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    flex-grow: 1;
+    margin-left: 60px;
+}
+
+.news__footer__nav li {
+    list-style: none;
+    list-style-image: linear-gradient(rgba(105, 146, 222, 0.5), rgba(36, 22, 75, 0.978));
+}
+
+#eventSearch{
+    background-color: #d39d9d;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    flex-grow: 1;
+    margin-left: 35px;
+}
+
+body.dark-mode,
+body.dark-mode * {
+    background-color: #333 !important;
+    color: #eee !important;
+}
+
+body.dark-mode .news__head__nav a,
+body.dark-mode .news__head__nav a * {
+    color: #eee !important;
+}
+
+body.dark-mode .news__head__nav a:hover,
+body.dark-mode .news__head__nav a:hover * {
+    background-color: #555 !important;
+}

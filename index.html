@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- add icon -->
+    <link rel="icon" href="icons8-news-100.png">
+    <title>News.io</title>
+</head>
+
+<body>
+    <header class="news__head">
+        <nav class="news__head__nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="news__head__logo">
+                <img src="icons8-news-100.png" alt="logo">
+            </div>
+            <div class="news__head__title">
+                <h1>News.io</h1>
+            </div>
+            <div class="news__head__search general__search">
+                <input type="text" placeholder="General Search">
+            </div>
+            <div class="toggle__mode">
+                <button onclick="toggleMode()">Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section for input of event to search for news -->
+    <section class="news__event__input">
+        <h2>Search News Event</h2>
+        <div class="news__head__search event__search">
+            <input type="text" id="eventSearch" placeholder="Enter event to search news">
+            <button onclick="searchEventNews()">Search</button>
+        </div>
+    </section>
+
+    <!-- Output section for news results -->
+    <section class="news__output">
+        <h2>News Results</h2>
+        <div id="newsResults">
+            <!-- News articles will be dynamically generated here -->
+        </div>
+    </section>
+
+    <script src="js/scri.js"></script>
+</body>
+
+</html>
