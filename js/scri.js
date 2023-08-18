@@ -10,7 +10,7 @@ function toggleMode() {
 async function searchEventNews() {
     const searchTerm = document.getElementById('eventSearch').value;
 
-    let endpoint = `https://newsapi.org/v2/everything?q=${searchTerm}&apiKey=871645c5d369436484d45cc70b208603`;
+    let endpoint = `https://newsapi.org/v2/everything?q=${searchTerm}&apiKey=YOUR API KEY FROM NEWS API `;
 
     try {
         let response = await fetch(endpoint);
